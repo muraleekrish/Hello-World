@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<!-- Copyright (c) 2002 by ObjectLearn. All Rights Reserved. -->
+<web-app>
+
+
+  <!-- Standard Action Servlet Configuration (with debugging) -->
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>application</param-name>
+      <param-value>ApplicationResources</param-value>
+    </init-param>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>2</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>2</param-value>
+    </init-param>
+    <init-param>
+      <param-name>validate</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+
+  <servlet>
+	<servlet-name>SchedulerInitializer</servlet-name>
+	<servlet-class>com.datrics.scheduler.initializer.SchedulerInitializer</servlet-class>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>productionservlet</servlet-name>
+    <servlet-class>com.savantit.prodacs.presentation.tableadmin.production.ProductionServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>validatingservlet</servlet-name>
+    <servlet-class>com.savantit.prodacs.presentation.tableadmin.workorder.ValidatingServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>nonproductionservlet</servlet-name>
+    <servlet-class>com.savantit.prodacs.presentation.tableadmin.production.NonProductionServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>WaterFallChart</servlet-name>
+    <servlet-class>com.savantit.prodacs.presentation.tableadmin.reports.WaterFallChart</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>GraphServlet</servlet-name>
+    <servlet-class>com.savantit.prodacs.presentation.tableadmin.reports.GraphServlet</servlet-class>
+  </servlet>
+  
+
+  <!-- ==================== Standard Action Servlet Mapping ==================== -->
+
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>productionservlet</servlet-name>
+    <url-pattern>/servlet/proservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>validatingservlet</servlet-name>
+    <url-pattern>/servlet/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>nonproductionservlet</servlet-name>
+    <url-pattern>/servlet/nprodservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>WaterFallChart</servlet-name>
+    <url-pattern>/servlet/WaterFallChart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>GraphServlet</servlet-name>
+    <url-pattern>/servlet/GraphServlet</url-pattern>
+  </servlet-mapping>
+	
+  <!-- ==================== Default Session Configuration ================= -->
+  <!-- You can set the default session timeout (in minutes) for all newly   -->
+  <!-- created sessions by modifying the value below.                       -->
+
+    <session-config>
+        <session-timeout>500</session-timeout>
+    </session-config>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+ 
+
+  <!-- Struts Tag Library Descriptors -->
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+  </taglib>
+  
+    <!-- User Admin Tag Library Descriptors -->
+  <taglib>
+  	<taglib-uri>/WEB-INF/useradmin.tld</taglib-uri>
+  	<taglib-location>/WEB-INF/useradmin.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+  	<taglib-uri>/WEB-INF/menuconfig.tld</taglib-uri>
+  	<taglib-location>/WEB-INF/menuconfig.tld</taglib-location>
+  </taglib>
+</web-app>

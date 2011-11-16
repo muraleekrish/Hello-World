@@ -1,0 +1,10 @@
+<StandardHours>
+	<stdhrs>true</stdhrs>
+	<joblevelstdhrs>false</joblevelstdhrs>
+	<opnlevelstdhrs>true</opnlevelstdhrs>
+	<incentive>true</incentive>
+	<joblevelincentive>false</joblevelincentive>
+	<jobopnlevelincentive>true</jobopnlevelincentive>
+</StandardHours>
+
+

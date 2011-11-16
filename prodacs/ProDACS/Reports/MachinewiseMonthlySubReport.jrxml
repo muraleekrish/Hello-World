@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created using an evaluation version of JasperAssistant (http://www.jasperassistant.com) -->
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="MachinewiseMonthlySubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30">
+	<field name="empName" class="java.lang.String">
+	</field>
+	<field name="empType" class="java.lang.String">
+	</field>
+	<field name="dutyHrs" class="java.lang.Float">
+	</field>
+	<field name="otHrs" class="java.lang.Float">
+	</field>
+	<field name="dutySlryHrs" class="java.lang.Float">
+	</field>
+	<field name="otSlryHrs" class="java.lang.Float">
+	</field>
+	<field name="incntvSlryHrs" class="java.lang.Float">
+	</field>
+	<pageHeader>
+		<band height="29">
+			<line>
+				<reportElement positionType="Float" x="7" y="1" width="543" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="6" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="7" y="28" width="543" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="550" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="83" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="12" y="4" width="65" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Emp. Name]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="156" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="90" y="4" width="63" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Emp. Type]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="217" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="162" y="4" width="50" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Duty Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="283" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="222" y="4" width="55" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[OT Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="365" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="286" y="4" width="73" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Duty Sal. Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="443" y="2" width="1" height="26"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="369" y="4" width="70" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[OT Sal. Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="448" y="4" width="98" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Incentive Sal. Hrs]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="26">
+			<line>
+				<reportElement positionType="Float" x="6" y="25" width="544" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="83" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="156" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="217" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="283" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="365" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="443" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="550" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="6" y="0" width="1" height="25"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="10" y="3" width="70" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{empName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="88" y="3" width="63" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{empType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="162" y="3" width="49" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{dutyHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="233" y="3" width="42" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{otHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="300" y="3" width="49" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{dutySlryHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="379" y="3" width="49" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{otSlryHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="475" y="3" width="49" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{incntvSlryHrs}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

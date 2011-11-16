@@ -1,0 +1,38 @@
+/*
+ * Created on Mar 2, 2005
+ *
+ * ClassName	:  	BuildConfig.java
+ *
+ * Copyright (c) 2005 Savant Technologies Pvt Ltd. India. All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of Savant Technologies Pvt Ltd. India.
+ * (Confidential Information).  You shall not disclose or use Confidential
+ * Information without the express written agreement of Savant Technologies Pvt Ltd. India 
+ * 
+ */
+package com.savantit.prodacs.infra.util;
+
+/**
+ * @author kduraisamy
+ *
+ */
+public class BuildConfig
+{
+
+   	public static final boolean DMODE = false; // to check is it development mode
+	public static final int ORACLE = 1;
+	public static final int MYSQL = 2;
+	public static final int DBASE=MYSQL;
+	public static final boolean USECONNECTIONPOOL = false;
+	public static final boolean USE_INFO_LOGGER = true;
+	public static final boolean USE_WARN_LOGGER = true;
+	public static final boolean USE_ERROR_LOGGER = true;
+	public static final boolean USE_FATAL_LOGGER = true;
+	public static final boolean USE_DEBUG_LOGGER = true;
+
+}
+
+/*
+*$Log$
+*
+*/

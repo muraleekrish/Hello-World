@@ -1,0 +1,1595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created using an evaluation version of JasperAssistant (http://www.jasperassistant.com) -->
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="SalaryReport" pageWidth="1000" pageHeight="1191" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30">
+	<parameter name="Title" class="java.lang.String">
+	</parameter>
+	<parameter name="month" class="java.lang.String">
+	</parameter>
+	<parameter name="year" class="java.lang.String">
+	</parameter>
+	<field name="objSalHrsDetails" class="java.lang.Object">
+	</field>
+	<field name="objIncHrsDetails" class="java.lang.Object">
+	</field>
+	<field name="objOtHrsDetails" class="java.lang.Object">
+	</field>
+	<field name="empName" class="java.lang.String">
+	</field>
+	<title>
+		<band height="50">
+			<textField>
+				<reportElement positionType="Float" x="5" y="5" width="542" height="36"/>
+				<textElement verticalAlignment="Middle" isStyledText="true">
+					<font fontName="Times New Roman" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="33">
+			<line>
+				<reportElement positionType="Float" x="2" y="2" width="953" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="2" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="3" y="6" width="18" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SNo]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="2" y="1" width="953" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="22" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="25" y="6" width="113" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="140" y="3" width="1" height="28"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="142" y="6" width="21" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D/H]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="164" y="3" width="1" height="28"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="165" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="188" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="189" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="212" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="213" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="236" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="237" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="260" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="261" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="284" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="285" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="308" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="309" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="332" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="333" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="356" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="357" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="380" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="381" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="404" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="405" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[11]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="428" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="429" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="452" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="453" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[13]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="476" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="477" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[14]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="500" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="501" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="524" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="525" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[16]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="548" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="549" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[17]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="572" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="573" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[18]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="596" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="597" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[19]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="620" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="621" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="644" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="645" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[21]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="668" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="669" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[22]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="692" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="693" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[23]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="716" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="717" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[24]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="740" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="741" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="764" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="765" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[26]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="788" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="789" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[27]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="812" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="813" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[28]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="836" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="837" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[29]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="860" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="861" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="884" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="885" y="6" width="17" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[31]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="908" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="909" y="6" width="45" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tot Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="955" y="2" width="1" height="29"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="2" y="32" width="953" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="2" y="31" width="953" height="1"/>
+				<graphicElement/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="56">
+			<line>
+				<reportElement positionType="Float" x="2" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="22" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="140" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="142" y="2" width="20" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sal]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="164" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="2" y="55" width="953" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="3" y="8" width="18" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="142" y="21" width="20" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Inc]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="141" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="142" y="39" width="20" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[OT]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="141" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="25" y="8" width="113" height="35"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{empName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="165" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay1()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="165" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay1()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="165" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="165" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay1()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="165" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="188" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="189" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay2()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="189" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay2()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="189" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="189" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay2()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="189" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="212" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="213" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay3()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="213" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay3()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="213" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="213" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay3()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="213" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="236" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="237" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay4()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="237" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay4()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="237" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="237" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay4()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="237" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="260" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="261" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay5()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="261" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay5()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="261" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="261" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay5()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="261" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="284" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="285" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay6()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="285" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay6()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="285" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="285" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay6()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="285" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="308" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="309" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay7()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="309" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay7()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="309" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="309" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay7()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="309" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="332" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="333" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay8()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="333" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay8()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="333" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="333" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay8()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="333" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="356" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="357" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay9()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="357" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay9()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="357" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="357" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay9()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="357" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="380" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="381" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay10()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="381" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay10()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="381" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="381" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay10()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="381" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="404" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="405" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay11()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="405" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay11()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="405" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="405" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay11()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="405" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="428" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="429" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay12()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="429" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay12()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="429" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="429" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay12()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="429" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="452" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="453" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay13()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="453" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay13()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="453" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="453" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay13()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="453" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="476" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="477" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay14()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="477" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay14()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="477" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="477" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay14()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="477" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="500" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="501" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay15()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="501" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay15()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="501" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="501" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay15()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="501" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="524" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="525" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay16()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="525" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay16()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="525" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="525" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay16()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="525" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="548" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="549" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay17()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="549" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay17()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="549" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="549" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay17()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="549" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="572" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="573" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay18()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="573" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay18()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="573" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="573" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay18()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="573" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="596" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="597" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay19()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="597" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay19()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="597" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="597" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay19()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="597" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="620" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="621" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay20()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="621" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay20()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="621" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="621" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay20()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="621" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="644" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="645" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay21()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="645" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay21()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="645" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="645" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay21()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="645" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="668" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="669" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay22()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="669" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay22()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="669" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="669" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay22()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="669" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="692" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="693" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay23()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="693" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay23()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="693" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="693" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay23()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="693" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="716" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="717" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay24()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="717" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay24()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="717" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="717" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay24()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="717" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="740" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="741" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay25()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="741" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay25()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="741" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="741" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay25()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="741" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="764" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="765" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay26()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="765" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay26()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="765" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="765" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay26()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="765" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="788" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="789" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay27()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="789" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay27()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="789" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="789" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay27()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="789" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="812" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="813" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay28()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="813" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay28()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="813" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="813" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay28()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="813" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="836" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="837" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay29()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="837" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay29()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="837" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="837" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay29()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="837" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="860" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="861" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay30()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="861" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay30()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="861" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="861" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay30()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="861" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="884" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="885" y="2" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getDay31()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="885" y="39" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getDay31()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="885" y="18" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="885" y="21" width="22" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getDay31()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="885" y="37" width="23" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="908" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="909" y="2" width="45" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.SalHrsObjDetails)$F{objSalHrsDetails}).getTotHrs()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="909" y="39" width="45" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.OtHrsObjDetails)$F{objOtHrsDetails}).getTotHrs()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="909" y="21" width="45" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[((com.savantit.prodacs.businessimplementation.reports.IncHrsObjDetails)$F{objIncHrsDetails}).getTotHrs()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="955" y="0" width="1" height="55"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="909" y="18" width="46" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="909" y="37" width="46" height="1"/>
+				<graphicElement/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="4" y="4" width="40" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="47" y="4" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement positionType="Float" x="107" y="4" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="77" y="4" width="15" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[of]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

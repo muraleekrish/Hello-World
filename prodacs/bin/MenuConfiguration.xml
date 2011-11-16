@@ -1,0 +1,113 @@
+<MenuConfig name="ProDACS Main Menu">
+	<level1 id="10001" name="Customer" link="null">
+		<level2 id="1" name="Customer Type" link="/ProDACS/Customer/CustomerTypeList.jsp"/>
+		<level2 id="2" name="Customer" link="/ProDACS/Customer/CustomerList.jsp"/>
+	</level1>
+
+	<level1 id="10002" name="Employee" link="null">
+		<level2 id="3" name="Employee Type" link="/ProDACS/Employee/EmployeeTypeList.jsp"/>
+		<level2 id="4" name="Employee" link="/ProDACS/Employee/EmployeeList.jsp"/>
+	</level1>
+
+	<level1 id="10003" name="Machine" link="null">
+		<level2 id="5" name="Machine Type" link="/ProDACS/Machine/MachineTypeList.jsp"/>
+		<level2 id="6" name="Machine" link="/ProDACS/Machine/MachineList.jsp"/>
+		<level2 id="7" name="Operation Group" link="/ProDACS/OperationGroup/OperationGroupList.jsp"/>
+	</level1>
+
+	<level1 id="10004" name="Work Calendar" link="null">
+		<level2 id="8" name="Shift Definition" link="/ProDACS/WorkCalender/ShiftDefinitionList.jsp"/>
+		<level2 id="9" name="Base Calendar" link="/ProDACS/WorkCalender/BaseCalendarList.jsp"/>
+		<level2 id="10" name="Availability Calendar" link="/ProDACS/WorkCalender/AvailCalendarList.jsp"/>
+	</level1>
+
+	<level1 id="10010" name="Rules" link="null">
+		<level2 id="43" name="Team" link="/ProDACS/Employee/EmployeeTypeRule.jsp"/>
+		<level2 id="42" name="Posting Rule" link="/ProDACS/Production/PostingRule.jsp"/>
+		<level2 id="22" name="Payroll Cycle" link="/ProDACS/PayrollAdministration/PayrollCycle.jsp"/>
+	</level1>
+	
+	<level1 id="11" name="Job" link="/ProDACS/JobMaster/JobMasterList.jsp"/>
+
+	<level1 id="55" name="W.O JobStatus" link="/ProDACS/Production/WoJobStatus.jsp"/>
+
+	<level1 id="12" name="Rework" link="/ProDACS/Rework/ReworkList.jsp"/>
+
+	<level1 id="10005" name="WorkOrder" link="null">
+		<level2 id="13" name="Workorder" link="/ProDACS/WorkOrder/WorkOrderList.jsp"/>
+		<level2 id="14" name="Dummy WorkOrder" link="/ProDACS/WorkOrder/DummyWorkOrderList.jsp"/>
+		<level2 id="15" name="Workorder/Job-Closing" link="/ProDACS/WorkOrder/WorkOrderJobClose.jsp"/>
+		<level2 id="16" name="Pre-Close Log" link="/ProDACS/WorkOrder/PreCloseLogList.jsp"/>
+	</level1>
+
+	<level1 id="10006" name="Production" link="null">
+		<level2 id="17" name="Production - Direct" link="/ProDACS/Production/ProductionList.jsp"/>
+		<level2 id="18" name="Non-Production" link="/ProDACS/Production/NonProductionList.jsp"/>
+		<level2 id="19" name="Radial Production" link="/ProDACS/Production/RadialProductionList.jsp"/>
+		<level2 id="20" name="Production - InDirect" link="/ProDACS/Production/PayOutProductionList.jsp"/>
+		<level2 id="57" name="Production Accounting" link="/ProDACS/Production/CheckMachineAccntng.jsp"/>
+		<level2 id="21" name="Post Production" link="/ProDACS/Production/PostProduction.jsp"/>
+	</level1>
+
+	<level1 id="10012" name="Final" link="null">
+		<level2 id="49" name="Production - Final" link="/ProDACS/Production/ProductionFinal.jsp"/>
+		<level2 id="51" name="Despatch Clearance" link="/ProDACS/Production/DespatchClearanceList.jsp"/>
+		<level2 id="53" name="Final Posting" link="/ProDACS/Production/QCPostProduction.jsp"/>
+	</level1>
+	
+	
+	<level1 id="10013" name="Shipment" link="null">
+		<level2 id="52" name="Shipment Reference" link="/ProDACS/Production/ShipmentReferenceList.jsp"/>
+		<level2 id="54" name="Shipment Posting" link="/ProDACS/Production/ShipmentPosting.jsp"/>
+	</level1>
+	
+	<level1 id="50" name="Job Status" link="/ProDACS/Production/JobStatus.jsp"/>
+	
+	<level1 id="10007" name="Payroll Administration" link="null">
+		<level2 id="41" name="Payroll Id" link="/ProDACS/PayrollAdministration/PayrollId.jsp"/>
+		<level2 id="23" name="Payroll Interface" link="/ProDACS/PayrollAdministration/PayrollInterface.jsp"/>
+		<level2 id="24" name="Payroll" link="/ProDACS/PayrollAdministration/CreatePayroll.jsp"/>
+		<level2 id="25" name="Payroll Adjustment" link="/ProDACS/PayrollAdministration/PayrollAdjustment.jsp"/>
+		<level2 id="26" name="Close Payroll" link="/ProDACS/PayrollAdministration/PayrollCloseList.jsp"/>
+	</level1>
+	
+	<level1 id="27" name="Rework Log" link="/ProDACS/ReworkLog/ReworkLogList.jsp"/>
+	
+	<level1 id="10008" name="Security Administration" link="null">
+		<level2 id="28" name="User" link="/ProDACS/SecurityAdministration/UserList.jsp"/>
+		<level2 id="29" name="Groups" link="/ProDACS/SecurityAdministration/GroupList.jsp"/>
+	</level1>
+	
+	<level1 id="10009" name="Reports" link="null">
+		<level2 id="30" name="Salary Report" link="/ProDACS/Reports/SalaryReport/SalaryReport.jsp "/>
+		<level2 id="31" name="Monthly Report" link="/ProDACS/Reports/MonthlyReport/MonthlyReport.jsp "/>
+		<level2 id="32" name="Monthly Production" link="/ProDACS/Reports/MonthlyProduction/MonthlyProduction.jsp "/>
+		<level2 id="33" name="Half Yearly Production" link="/ProDACS/Reports/HalfYearlyProduction/HalfYearlyProduction.jsp "/>
+		<level2 id="34" name="Employee Performance" link="/ProDACS/Reports/EmployeePerformance/EmployeePerformance.jsp "/>
+		<level2 id="35" name="Productions of Machine" link="/ProDACS/Reports/ProductionOfMachine/ProductionOfMachine.jsp "/>
+		<level2 id="36" name="Machine Utilization" link="/ProDACS/Reports/MachineUtilization/MachineUtilization.jsp "/>
+		<level2 id="37" name="Idle &amp; Breakdown" link="/ProDACS/Reports/IdleBreakDown/IdleBreakDown.jsp "/>
+		<level2 id="38" name="Top Sheet" link="/ProDACS/Reports/TopSheet/TopSheet.jsp "/>
+		<level2 id="45" name="WO-Job Performance" link="/ProDACS/Reports/ActualHours/ActualHours.jsp "/>
+		<level2 id="39" name="Quantity Produced" link="/ProDACS/Reports/QuantityProduced/QuantityProduced.jsp "/>
+		<level2 id="40" name="Workorder Reference" link="/ProDACS/Reports/WOReference/WOReference.jsp "/>
+		<level2 id="56" name="Job Quantities" link="/ProDACS/Reports/JobQuantityDetails/JobQuantities.jsp "/>
+	</level1>
+	
+	<level1 id="10012" name="Graphs" link="null">
+		<level2 id="59" name="Machine Util Chart" link="/ProDACS/Reports/MachineUtilization/MachineUtilChart.jsp "/>
+		<level2 id="60" name="Idle/Breakdown Chart" link="/ProDACS/Reports/IdleBreakDown/IdleBreakDownChart.jsp "/>
+		<level2 id="58" name="Employee Performance Chart" link="/ProDACS/Reports/EmployeePerformance/EmployeePerformanceChart.jsp "/>
+	</level1>
+	
+	<level1 id="10011" name="Mailing Reports" link="null">
+		<level2 id="44" name="Production Accounting Report" link="/ProDACS/Reports/ProductionAccounting/ProductionAccounting.jsp"/>
+		<level2 id="46" name="Machinewise Monthly Report" link="/ProDACS/Reports/MachinewiseMonthly/MachinewiseMonthly.jsp"/>
+		<level2 id="47" name="Monthly Payroll Report" link="/ProDACS/Reports/MonthlyPayroll/MonthlyPayroll.jsp"/>
+	</level1>
+
+	<level1 id="48" name="My Account" link="/ProDACS/SecurityAdministration/UserPreferences.jsp"/>
+
+	<level1 id="61" name="Mail Scheduler" link="/ProDACS/MailScheduler.jsp"/>
+
+</MenuConfig>	

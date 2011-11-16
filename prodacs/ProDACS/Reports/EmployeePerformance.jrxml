@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created using an evaluation version of JasperAssistant (http://www.jasperassistant.com) -->
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="EmployeePerformance" pageWidth="1085" pageHeight="842" orientation="Landscape" columnWidth="515" leftMargin="40" rightMargin="40" topMargin="50" bottomMargin="50">
+	<reportFont name="Font_1" isDefault="false" fontName="Times New Roman" size="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<parameter name="Title" class="java.lang.String">
+	</parameter>
+	<parameter name="startDate" class="java.lang.String">
+	</parameter>
+	<parameter name="endDate" class="java.lang.String">
+	</parameter>
+	<parameter name="empId" class="java.lang.String">
+	</parameter>
+	<field name="vecEmployeePerformanceDetails" class="java.lang.Object">
+	</field>
+	<field name="vecEmployeePerformanceTotDetails" class="java.lang.Object">
+	</field>
+	<group name="Group_1">
+		<groupFooter>
+		<band height="25">
+			<subreport>
+				<reportElement positionType="Float" x="4" y="3" width="991" height="18"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource((java.util.Collection)$F{vecEmployeePerformanceTotDetails})]]></dataSourceExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["EmployeePerformanceSummarySubReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		</groupFooter>
+	</group>
+	<group name="Group_2">
+		<groupFooter>
+		<band height="47">
+			<subreport>
+				<reportElement positionType="Float" x="4" y="2" width="995" height="40"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource((java.util.Collection)$F{vecEmployeePerformanceDetails})]]></dataSourceExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["EmployeePerformanceSubReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="58">
+			<textField>
+				<reportElement positionType="Float" x="3" y="4" width="904" height="43"/>
+				<textElement verticalAlignment="Middle" isStyledText="true">
+					<font fontName="Times New Roman" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageFooter>
+		<band height="19">
+			<staticText>
+				<reportElement x="4" y="4" width="40" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="47" y="4" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement positionType="Float" x="107" y="4" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="77" y="4" width="15" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[of]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

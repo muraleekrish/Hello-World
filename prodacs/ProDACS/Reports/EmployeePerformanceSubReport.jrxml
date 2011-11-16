@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created using an evaluation version of JasperAssistant (http://www.jasperassistant.com) -->
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="EmployeePerformanceSubReport" pageWidth="1045" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30">
+	<field name="prodCrntDate" class="java.util.Date">
+	</field>
+	<field name="mcCode" class="java.lang.String">
+	</field>
+	<field name="shiftName" class="java.lang.String">
+	</field>
+	<field name="woNo" class="java.lang.String">
+	</field>
+	<field name="details" class="java.lang.String">
+	</field>
+	<field name="startOpn" class="java.lang.String">
+	</field>
+	<field name="endOpn" class="java.lang.String">
+	</field>
+	<field name="dtyHrs" class="java.lang.Float">
+	</field>
+	<field name="otHrs" class="java.lang.Float">
+	</field>
+	<field name="stdHrs" class="java.lang.Float">
+	</field>
+	<field name="opnHrs" class="java.lang.Float">
+	</field>
+	<field name="savedHrs" class="java.lang.Float">
+	</field>
+	<field name="exceededHrs" class="java.lang.Float">
+	</field>
+	<field name="incntvSalHrs" class="java.lang.Float">
+	</field>
+	<field name="dtySalHrs" class="java.lang.Float">
+	</field>
+	<field name="otSalHrs" class="java.lang.Float">
+	</field>
+	<pageHeader>
+		<band height="36">
+			<line>
+				<reportElement positionType="Float" x="3" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="6" y="11" width="52" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="63" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="64" y="12" width="72" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Machine Code]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="138" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="140" y="11" width="42" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Shift]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="184" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="187" y="11" width="45" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[W.O. No]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="235" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="237" y="11" width="179" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Client/Job/Drwg. No./SNo.]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="417" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="419" y="11" width="38" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[St.Opn]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="459" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="461" y="11" width="42" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ed.Opn]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="505" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="508" y="11" width="43" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dty.Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="553" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="555" y="11" width="42" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OT Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="599" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="601" y="11" width="42" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Std.Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="645" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="647" y="10" width="47" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Opn.Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="696" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="698" y="11" width="61" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saved Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="761" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="763" y="11" width="81" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Exceeded Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="846" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="848" y="11" width="43" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inc.Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="892" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="894" y="13" width="40" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sal.Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="938" y="13" width="60" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OT Sal.Hrs]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="936" y="6" width="1" height="28"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="1000" y="5" width="1" height="30"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="4" y="4" width="996" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="4" y="35" width="996" height="1"/>
+				<graphicElement/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="46">
+			<line>
+				<reportElement positionType="Float" x="4" y="45" width="996" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="3" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="138" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="184" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="235" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="417" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="459" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="505" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="1000" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="936" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="938" y="6" width="60" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{otSalHrs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="892" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="894" y="6" width="40" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{dtySalHrs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="846" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="848" y="6" width="43" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{incntvSalHrs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="761" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="770" y="6" width="68" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{exceededHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="702" y="6" width="52" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{savedHrs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="696" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="645" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="647" y="6" width="47" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{opnHrs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="599" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="601" y="6" width="42" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{stdHrs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="553" y="0" width="1" height="45"/>
+				<graphicElement/>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="555" y="6" width="42" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{otHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="508" y="6" width="43" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{dtyHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="461" y="6" width="42" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{endOpn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="419" y="6" width="38" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{startOpn}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="237" y="2" width="179" height="41" isPrintInFirstWholeBand="true"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{details}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="187" y="6" width="45" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{woNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="140" y="6" width="42" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{shiftName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="65" y="6" width="68" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{mcCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="5" y="6" width="57" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{prodCrntDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

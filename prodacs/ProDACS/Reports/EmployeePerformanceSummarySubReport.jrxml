@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created using an evaluation version of JasperAssistant (http://www.jasperassistant.com) -->
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="EmployeePerformanceSummarySubReport" pageWidth="1045" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30">
+	<field name="totOpnHrs" class="java.lang.Double">
+	</field>
+	<field name="totStdHrs" class="java.lang.Double">
+	</field>
+	<field name="totSavedHrs" class="java.lang.Double">
+	</field>
+	<field name="totExceededHrs" class="java.lang.Double">
+	</field>
+	<field name="savedHrsPercentage" class="java.lang.String">
+	</field>
+	<field name="exceededHrsPercentage" class="java.lang.String">
+	</field>
+	<field name="netHrsSavedPercentage" class="java.lang.String">
+	</field>
+	<detail>
+		<band height="51">
+			<staticText>
+				<reportElement positionType="Float" x="4" y="5" width="120" height="16"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Total Working Hrs. :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="130" y="5" width="40" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{totOpnHrs}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="193" y="5" width="90" height="16"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Total Std. Hrs. :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="290" y="5" width="40" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{totStdHrs}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="365" y="5" width="100" height="16"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Total Saved Hrs. :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="473" y="5" width="40" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{totSavedHrs}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="536" y="5" width="120" height="16"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Total Exceeded Hrs. :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="665" y="5" width="40" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{totExceededHrs}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="729" y="5" width="65" height="16"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Saved % :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="804" y="5" width="40" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{savedHrsPercentage}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="869" y="5" width="80" height="16"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Exceeded % :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="958" y="5" width="40" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{exceededHrsPercentage}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="4" y="33" width="115" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Effectiveness :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="130" y="33" width="40" height="16"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{netHrsSavedPercentage}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

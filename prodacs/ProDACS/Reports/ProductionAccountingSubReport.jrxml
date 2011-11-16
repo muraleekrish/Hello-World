@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created using an evaluation version of JasperAssistant (http://www.jasperassistant.com) -->
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="ProductionAccountingSubReport" pageWidth="595" pageHeight="842" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30">
+	<field name="shiftName" class="java.lang.String">
+	</field>
+	<field name="prodHrs" class="java.lang.Float">
+	</field>
+	<field name="nprodHrs" class="java.lang.Float">
+	</field>
+	<field name="availHrs" class="java.lang.Float">
+	</field>
+	<columnHeader>
+		<band height="46">
+			<line>
+				<reportElement positionType="Float" x="9" y="45" width="545" height="1"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="13" y="14" width="72" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Shift Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="104" y="25" width="98" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Production Hours]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="232" y="25" width="123" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Non Production Hours]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="383" y="14" width="161" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Non Accounted Hours]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="89" y="21" width="284" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="9" y="1" width="1" height="44"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="553" y="22" width="1" height="23"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="89" y="23" width="1" height="22"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="89" y="22" width="1" height="23"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="218" y="23" width="1" height="22"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="218" y="22" width="1" height="23"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="372" y="23" width="1" height="22"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="372" y="22" width="1" height="23"/>
+				<graphicElement/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="100" y="3" width="251" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Accounted Hours]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="89" y="1" width="1" height="20"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="9" y="0" width="545" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="372" y="1" width="1" height="20"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="553" y="1" width="1" height="21"/>
+				<graphicElement/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25">
+			<textField>
+				<reportElement positionType="Float" x="15" y="4" width="69" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{shiftName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="111" y="4" width="84" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{prodHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="253" y="4" width="86" height="16"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{nprodHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="424" y="4" width="76" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{availHrs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="9" y="24" width="545" height="1"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="9" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="9" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="553" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="553" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="89" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="89" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="218" y="0" width="1" height="23"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="218" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="372" y="0" width="1" height="23"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="372" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="9" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="553" y="0" width="1" height="24"/>
+				<graphicElement/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

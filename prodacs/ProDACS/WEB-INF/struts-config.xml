@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+  <!-- ========== Form Bean Definitions =================================== -->
+  <form-beans>
+
+  <!-- ********************* Start Customer ************************ -->
+  	<form-bean name = "CustomerList" type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerListForm"/>  
+	<form-bean name = "CustomerAdd" type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerAddForm"/>  
+	<form-bean name = "CustomerTypeList" type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerTypeListForm"/>  
+	<form-bean name = "CustomerTypeAdd" type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerTypeAddForm"/>  
+	<form-bean name = "CustomerTypeEdit" type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerTypeEditForm"/>  
+	<form-bean name = "CustomerEdit" type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerEditForm"/>  
+  <!-- ********************* End Customer ************************ -->
+  
+  <!-- ********************* Start Employee ************************ -->
+	<form-bean name = "EmployeeTypeList" type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeListForm"/>  
+	<form-bean name = "EmployeeTypeAdd" type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeAddForm"/>  
+	<form-bean name = "EmployeeTypeEdit" type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeEditForm"/>  
+	<form-bean name = "EmployeeList" type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeListForm"/>  
+	<form-bean name = "EmployeeAdd" type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeAddForm"/>  
+	<form-bean name = "EmployeeEdit" type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeEditForm"/>  
+	<form-bean name = "EmployeeStatusAdd" type = "com.savantit.prodacs.presentation.tableadmin.employee.NewStatusNameForm"/>  
+	<form-bean name = "EmployeeTypeRule" type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeRuleForm"/>  
+	
+  <!-- ********************* End Employee ************************ -->
+  
+  <!-- ********************* Start Machine ************************ -->
+  	<form-bean name = "MachineList" type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineListForm"/>  
+  	<form-bean name = "MachineAdd" type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineAddForm"/>  
+  	<form-bean name = "MachineEdit" type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineEditForm"/>
+  	<form-bean name = "MachineTypeList" type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineTypeListForm"/>
+  	<form-bean name = "MachineTypeAdd" type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineTypeAddForm"/>
+  	<form-bean name = "MachineTypeEdit" type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineTypeEditForm"/>
+  	 
+  <!-- ********************* End Machine ************************ -->
+
+  <!-- ********************* Start WorkCalendar************************ -->
+  	<form-bean name = "ShiftDefinitionList" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.ShiftDefinitionListForm"/>  
+  	<form-bean name = "ShiftDefinitionAdd" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.ShiftDefinitionAddForm"/>  
+  	<form-bean name = "ShiftDefinitionEdit" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.ShiftDefinitionEditForm"/>    
+  	<form-bean name = "BaseCalendarList" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.BaseCalendarListForm"/>  
+  	<form-bean name = "BaseCalendarAdd" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.BaseCalendarAddForm"/>  
+  	<form-bean name = "BaseCalendarEdit" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.BaseCalendarEditForm"/>    
+  	<form-bean name = "AvailCalendarList" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.AvailCalendarListForm"/>  
+  	<form-bean name = "AvailCalendarAdd" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.AvailCalendarAddForm"/>  
+  	<form-bean name = "AvailCalendarEdit" type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.AvailCalendarEditForm"/>    
+  <!-- ********************* End WorkCalendar ************************ -->
+  
+  <!-- ********************* Start Operation Group************************ -->  	
+    <form-bean name = "OperationGroupList" type = "com.savantit.prodacs.presentation.tableadmin.operationgroup.OperationGroupListForm"/>  
+  	<form-bean name = "OperationGroupAdd" type = "com.savantit.prodacs.presentation.tableadmin.operationgroup.OperationGroupAddForm"/>  
+  	<form-bean name = "OperationGroupEdit" type = "com.savantit.prodacs.presentation.tableadmin.operationgroup.OperationGroupEditForm"/>    
+  <!-- ********************* End Operation Group ************************ -->
+  
+  <!-- *********************** Start JobMaster ************************ -->
+    <form-bean name = "JobMasterList" type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.JobMasterListForm"/>  
+    <form-bean name = "JobMasterAdd" type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.JobMasterAddForm"/>  
+    <form-bean name = "JbMasterEdit" type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.JobMasterEditForm"/>  
+    <form-bean name = "GeneralNameAdd" type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.NewGeneralNameAddForm"/>  
+  <!-- *********************** End JobMaster ************************ -->
+
+  <!-- *********************** Start Rework ************************ -->
+    <form-bean name = "ReworkList" type = "com.savantit.prodacs.presentation.tableadmin.rework.ReworkListForm"/>
+    <form-bean name = "ReworkEdit" type = "com.savantit.prodacs.presentation.tableadmin.rework.ReworkEditForm"/>
+    <form-bean name = "ReworkAdd" type = "com.savantit.prodacs.presentation.tableadmin.rework.ReworkAddForm"/>
+    <form-bean name = "CreateReason" type = "com.savantit.prodacs.presentation.tableadmin.rework.CreateReasonForm"/>
+  <!-- ************************* End Rework ************************ -->
+
+  <!-- ************************* Start WorkOrder ************************ -->
+    <form-bean name = "WorkOrderList" type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderListForm"/>
+    <form-bean name = "WorkOrderAdd" type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderAddForm"/>
+    <form-bean name = "WorkOrderEdit" type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderEditForm"/>
+
+    <form-bean name = "DummyWorkOrderList" type = "com.savantit.prodacs.presentation.tableadmin.workorder.DummyWorkOrderListForm"/>
+    <form-bean name = "DummyWorkOrderAdd" type = "com.savantit.prodacs.presentation.tableadmin.workorder.DummyWorkOrderAddForm"/>
+    <form-bean name = "DummyWorkOrderEdit" type = "com.savantit.prodacs.presentation.tableadmin.workorder.DummyWorkOrderEditForm"/>
+
+    <form-bean name = "WorkOrderJobClose" type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderJobCloseForm"/>
+
+    <form-bean name = "PreCloseLogList" type = "com.savantit.prodacs.presentation.tableadmin.workorder.PreCloseLogListForm"/>
+    <form-bean name = "PreCloseLogAdd" type = "com.savantit.prodacs.presentation.tableadmin.workorder.PreCloseLogAddForm"/>
+    <form-bean name = "PreCloseLogEdit" type = "com.savantit.prodacs.presentation.tableadmin.workorder.PreCloseLogEditForm"/>
+  <!-- ************************** End WorkOrder ************************* -->
+
+  <!-- ************************** Start Production ************************* -->
+      <form-bean name = "ProductionList" type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionListForm"/>
+      <form-bean name = "ProductionAdd" type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionAddForm"/>
+      <form-bean name = "ProductionEdit" type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionEditForm"/>
+
+      <form-bean name = "NonProductionList" type = "com.savantit.prodacs.presentation.tableadmin.production.NonProductionListForm"/>
+      <form-bean name = "NonProductionAdd" type = "com.savantit.prodacs.presentation.tableadmin.production.NonProductionAddForm"/>
+      <form-bean name = "NonProductionEdit" type = "com.savantit.prodacs.presentation.tableadmin.production.NonProductionEditForm"/>
+
+      <form-bean name = "PostProduction" type = "com.savantit.prodacs.presentation.tableadmin.production.PostProductionForm"/>
+      <form-bean name = "QCPostProduction" type = "com.savantit.prodacs.presentation.tableadmin.production.PostProductionForm"/>
+      <form-bean name = "ShipmentPostProduction" type = "com.savantit.prodacs.presentation.tableadmin.production.PostProductionForm"/>
+      <form-bean name = "PostingRule" type = "com.savantit.prodacs.presentation.tableadmin.production.PostingRuleForm"/>
+      <form-bean name = "PostAccountings" type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionAcctngDetailsForm"/>
+
+      <form-bean name = "ProductionFinalList" type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionFinalForm"/>
+      <form-bean name = "ProductionFinalAdd" type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionFinalAddForm"/>
+      <form-bean name = "ProductionFinalEdit" type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionFinalEditForm"/>
+
+      <form-bean name = "ProductionAccntng" type = "com.savantit.prodacs.presentation.tableadmin.production.CheckMachineAccntngForm"/>
+
+  <!-- *************************** End Production ************************** -->
+  
+  <!-- *************************** Start Despatch Clearance ************************** -->
+	  <form-bean name = "DespatchClearanceList" type = "com.savantit.prodacs.presentation.tableadmin.production.DespatchClearanceForm"/>
+	  <form-bean name = "DespatchClearanceAdd" type = "com.savantit.prodacs.presentation.tableadmin.production.DespatchClearanceAddForm"/>
+	  <form-bean name = "DespatchClearanceEdit" type = "com.savantit.prodacs.presentation.tableadmin.production.DespatchClearanceEditForm"/>
+  <!-- *************************** End Despatch Clearance ************************** -->
+  
+  <!-- *************************** Start Shipment Reference ************************** -->
+	  <form-bean name = "ShipmentReferenceList" type = "com.savantit.prodacs.presentation.tableadmin.production.ShipmentReferenceListForm"/>
+	  <form-bean name = "ShipmentReferenceAdd" type = "com.savantit.prodacs.presentation.tableadmin.production.ShipmentReferenceAddForm"/>
+	  <form-bean name = "ShipmentReferenceEdit" type = "com.savantit.prodacs.presentation.tableadmin.production.ShipmentReferenceEditForm"/>
+  <!-- *************************** End Shipment Reference ************************** -->
+	 
+  <!-- ************************** Start PayOut Production ************************* -->
+      <form-bean name = "PayOutProductionList" type = "com.savantit.prodacs.presentation.tableadmin.production.PayOutProductionListForm"/>
+      <form-bean name = "PayOutProductionAdd" type = "com.savantit.prodacs.presentation.tableadmin.production.PayOutProductionAddForm"/>
+      <form-bean name = "PayOutProductionEdit" type = "com.savantit.prodacs.presentation.tableadmin.production.PayOutProductionEditForm"/>
+  <!-- *************************** End PayOut Production ************************** -->
+  
+  <!-- ************************** Start Radial Production ************************* -->
+      <form-bean name = "RadialProductionList" type = "com.savantit.prodacs.presentation.tableadmin.production.RadialProductionListForm"/>
+      <form-bean name = "RadialProductionAdd" type = "com.savantit.prodacs.presentation.tableadmin.production.RadialProductionAddForm"/>
+      <form-bean name = "RadialProductionEdit" type = "com.savantit.prodacs.presentation.tableadmin.production.RadialProductionEditForm"/>     
+  <!-- *************************** End Radial Production ************************** -->
+  
+  <!-- ************************** Start Production Planning ************************* -->
+      <form-bean name = "GroupwiseHours" type = "com.savantit.prodacs.presentation.tableadmin.productionplanning.GroupwiseHoursForm"/>
+  <!-- *************************** End Production Planning ************************** -->
+  
+  <!-- ************************** Start Payroll Administration ************************* -->
+        <form-bean name = "PayrollId" type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollIdForm"/>
+        <form-bean name = "PayrollIdAdd" type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollIdAddForm"/>
+        <form-bean name = "PayrollCycle" type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollCycleForm"/>
+        <form-bean name = "PayrollInterface" type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollInterfaceForm"/>
+        <form-bean name = "CreatePayroll" type = "com.savantit.prodacs.presentation.tableadmin.payroll.CreatePayrollForm"/>
+		<form-bean name = "PayrollAdjustment" type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollAdjustmentForm"/>                
+		<form-bean name = "PayrollCloseList" type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollCloseListForm"/>                		
+  <!-- *************************** End Payroll Administration ************************** -->
+  
+  <!-- ************************** Start ReworkLog************************* -->
+        <form-bean name = "ReworkLogList" type = "com.savantit.prodacs.presentation.tableadmin.reworklog.ReworkLogListForm"/>  
+        <form-bean name = "ReworkLogAdd" type = "com.savantit.prodacs.presentation.tableadmin.reworklog.ReworkLogAddForm"/>  
+        <form-bean name = "ReworkLogEdit" type = "com.savantit.prodacs.presentation.tableadmin.reworklog.ReworkLogEditForm"/>
+  <!-- *************************** End ReworkLog************************** -->
+  
+  <!-- ************************** Start Security Administration************************* -->
+  		
+        <form-bean name = "GroupList" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.GroupListForm"/>  
+        <form-bean name = "GroupAdd" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.GroupAddForm"/>  
+        <form-bean name = "GroupEdit" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.GroupEditForm"/>  
+        
+        <form-bean name = "UserList" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserListForm"/>  
+        <form-bean name = "UserAdd" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserAddForm"/>  
+        <form-bean name = "UserEdit" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserEditForm"/>
+
+        <form-bean name = "Login" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.LoginForm"/>
+
+        <form-bean name = "MasterLogin" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.MasterLoginForm"/>
+
+        <form-bean name = "SystemInfo" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.SystemInfoForm"/>
+
+        <form-bean name = "UserPreferences" type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserPreferencesForm"/>
+        
+  <!-- *************************** End Security Administration************************** -->
+  
+  <!-- *************************** Start WO Job Status ************************** -->
+	<form-bean name = "WorkOrderJobStatusList" type = "com.savantit.prodacs.presentation.tableadmin.production.WorkOrderJobStatusListForm"/>  
+	<form-bean name = "WOJobStatusList" type = "com.savantit.prodacs.presentation.tableadmin.production.WOJobStatusListForm"/>  
+  <!-- *************************** End WO Job Status ************************** -->  
+
+  <!-- *************************** Start Graph ************************** -->
+	<form-bean name = "IdleBreakDownGraph" type = "com.savantit.prodacs.presentation.tableadmin.reports.IdleBreakDownForm"/>  
+	<form-bean name = "EmployeePerformanceGraph" type = "com.savantit.prodacs.presentation.tableadmin.reports.EmployeePerformanceForm"/>  
+	<form-bean name = "MachineUtilGraph" type = "com.savantit.prodacs.presentation.tableadmin.reports.MachineUtilForm"/>  
+  <!-- *************************** End Graph ************************** -->
+
+  <!-- *************************** Start Graph ************************** -->
+	<form-bean name = "MailScheduler" type = "com.savantit.prodacs.presentation.tableadmin.Scheduler.MailSchedulerForm"/>  
+  <!-- *************************** End Graph ************************** -->
+  
+  </form-beans>
+
+  <!-- ========== Global Forward Definitions ============================== -->
+   <global-forwards>
+   </global-forwards>
+
+ <!-- ========== Action Mapping Definitions ============================== -->
+  <action-mappings>
+  <!-- ********************* Start Customer ************************ -->
+
+ 	<action path = "/frmCustomerInfoList" 
+ 			type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerListAction"
+ 			name = "CustomerList" scope="request" input = "/CustomerList.jsp">
+ 		<forward name = "success" path = "/Customer/CustomerList.jsp" />
+ 		<forward name = "failure" path = "/Customer/CustomerList.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmCustomerAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerAddAction"
+ 			name = "CustomerAdd" scope="request" input = "/Customer/CustomerAdd.jsp">
+ 		<forward name = "success" path = "/Customer/CustomerList.jsp" />
+ 		<forward name = "failure" path = "/Customer/CustomerAdd.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmCustomerTypeList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerTypeListAction"
+ 			name = "CustomerTypeList" scope="request" input = "/Customer/CustomerTypeList.jsp">
+ 		<forward name = "success" path = "/Customer/CustomerTypeList.jsp" />
+ 		<forward name = "failure" path = "/Customer/CustomerTypeList.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmCustomerTypeAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerTypeAddAction"
+ 			name = "CustomerTypeAdd" scope="request" input = "/Customer/CustomerTypeAdd.jsp">
+ 		<forward name = "success" path = "/Customer/CustomerTypeList.jsp" />
+ 		<forward name = "failure" path = "/Customer/CustomerTypeAdd.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmCustomerTypeEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerTypeEditAction"
+ 			name = "CustomerTypeEdit" scope="request" input = "/Customer/CustomerTypeEdit.jsp">
+ 		<forward name = "success" path = "/Customer/CustomerTypeList.jsp" />
+ 		<forward name = "failure" path = "/Customer/CustomerTypeEdit.jsp" />
+ 		<forward name = "view" path = "/Customer/CustomerTypeView.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmCustomerEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.customer.CustomerEditAction"
+ 			name = "CustomerEdit" scope="request" input = "/Customer/CustomerEdit.jsp">
+ 		<forward name = "success" path = "/Customer/CustomerList.jsp" />
+ 		<forward name = "failure" path = "/Customer/CustomerEdit.jsp" />
+ 		<forward name = "view" path = "/Customer/CustomerView.jsp" />
+ 	</action>	
+
+  <!-- ********************* End Customer ************************ -->
+  
+  <!-- ********************* Start Employee ************************ -->
+ 	<action path = "/frmEmpTypeList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeListAction"
+ 			name = "EmployeeTypeList" scope="request" input = "/EmployeeTypeList.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeTypeList.jsp" />
+ 		<forward name = "failure" path = "/Employee/EmployeeTypeList.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmEmpTypeAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeAddAction"
+ 			name = "EmployeeTypeAdd" scope="request" input = "/Employee/EmployeeTypeAdd.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeTypeList.jsp" />
+ 		<forward name = "failure" path = "/Employee/EmployeeTypeAdd.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmEmpTypeEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeEditAction"
+ 			name = "EmployeeTypeEdit" scope="request" input = "/Employee/EmployeeTypeEdit.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeTypeList.jsp" />
+ 		<forward name = "failure" path = "/Employee/EmployeeTypeEdit.jsp" />
+ 		<forward name = "view" path="/Employee/EmployeeTypeView.jsp" />
+ 		
+ 	</action>	
+
+ 	<action path = "/frmEmpInfoList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeListAction"
+ 			name = "EmployeeList" scope="request" input = "/EmployeeList.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeList.jsp" />
+ 		<forward name = "failure" path = "/Employee/EmployeeList.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmEmpAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeAddAction"
+ 			name = "EmployeeAdd" scope="request" input = "/Employee/EmployeeAdd.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeList.jsp" />
+ 		<forward name = "failure" path = "/Employee/EmployeeAdd.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmEmpEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeEditAction"
+ 			name = "EmployeeEdit" scope="request" input = "/Employee/EmployeeEdit.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeList.jsp" />
+ 		<forward name = "failure" path = "/Employee/EmployeeEdit.jsp" />
+ 		<forward name = "view" path="/Employee/EmployeeView.jsp" /> 		
+ 	</action>	
+
+ 	<action path = "/frmNewStatusAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.NewStatusNameAction"
+ 			name = "EmployeeStatusAdd" scope="request" input = "/Employee/NewStatusName.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeAdd.jsp" />
+ 		<forward name = "failure" path = "/Employee/NewStatusName.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmEmpTypeRule"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.employee.EmployeeTypeRuleAction"
+ 			name = "EmployeeTypeRule" scope="request" input = "/Employee/EmployeeTypeRule.jsp">
+ 		<forward name = "success" path = "/Employee/EmployeeTypeRule.jsp" />
+ 		<forward name = "failure" path = "/Employee/EmployeeTypeRule.jsp" />
+ 	</action>	
+ 	
+  <!-- ********************* End Employee ************************ -->
+  
+  <!-- ********************* Start Machine ************************ -->
+ 	<action path = "/frmMachInfoList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineListAction"
+ 			name = "MachineList" scope="request" input = "/MachineList.jsp">
+ 		<forward name = "success" path = "/Machine/MachineList.jsp" />
+ 		<forward name = "failure" path = "/Machine/MachineList.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmMachAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineAddAction"
+ 			name = "MachineAdd" scope="request" input = "/Machine/MachineAdd.jsp">
+ 		<forward name = "success" path = "/Machine/MachineList.jsp" />
+ 		<forward name = "failure" path = "/Machine/MachineAdd.jsp" />
+ 	</action>	
+
+ 	<action path = "/frmMachEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineEditAction"
+ 			name = "MachineEdit" scope="request" input = "/Machine/MachineEdit.jsp">
+ 		<forward name = "success" path = "/Machine/MachineList.jsp" />
+ 		<forward name = "failure" path = "/Machine/MachineEdit.jsp" />
+ 		<forward name = "view" path = "/Machine/MachineView.jsp" />
+ 	</action>	
+ 	
+ 	<action path = "/frmMachineTypeList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineTypeListAction"
+ 			name = "MachineTypeList" scope="request" input = "/Machine/MachineTypeList.jsp">
+ 		<forward name = "success" path = "/Machine/MachineTypeList.jsp" />
+ 		<forward name = "failure" path = "/Machine/MachineTypeList.jsp" />
+ 	</action>	
+ 	
+ 	<action path = "/frmMachineTypeAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineTypeAddAction"
+ 			name = "MachineTypeAdd" scope="request" input = "/Machine/MachineTypeAdd.jsp">
+ 		<forward name = "success" path = "/Machine/MachineTypeList.jsp" />
+ 		<forward name = "failure" path = "/Machine/MachineTypeAdd.jsp" />
+ 	</action>	
+ 	
+ 	<action path = "/frmMachineTypeEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.machine.MachineTypeEditAction"
+ 			name = "MachineTypeEdit" scope="request" input = "/Machine/MachineTypeEdit.jsp">
+ 		<forward name = "success" path = "/Machine/MachineTypeList.jsp" />
+ 		<forward name = "failure" path = "/Machine/MachineTypeEdit.jsp" />
+ 		<forward name = "view" path = "/Machine/MachineTypeView.jsp" />
+ 	</action>	
+  
+  <!-- ********************* End Machine ************************ -->
+  
+  <!-- ********************* Start WorkCalendar ************************ -->
+	<action path = "/frmShiftDftnList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.ShiftDefinitionListAction"
+ 			name = "ShiftDefinitionList" scope="request" input = "/ShiftDefinitionList.jsp">
+ 		<forward name = "success" path = "/WorkCalender/ShiftDefinitionList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/ShiftDefinitionList.jsp" />
+ 	</action>	
+
+	<action path = "/frmShiftDftnAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.ShiftDefinitionAddAction"
+ 			name = "ShiftDefinitionAdd" scope="request" input = "/WorkCalender/ShiftDefinitionAdd.jsp">
+ 		<forward name = "success" path = "/WorkCalender/ShiftDefinitionList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/ShiftDefinitionAdd.jsp" />
+ 	</action>	
+
+	<action path = "/frmShiftDftnEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.ShiftDefinitionEditAction"
+ 			name = "ShiftDefinitionEdit" scope="request" input = "/WorkCalender/ShiftDefinitionEdit.jsp">
+ 		<forward name = "success" path = "/WorkCalender/ShiftDefinitionList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/ShiftDefinitionEdit.jsp" />
+ 		<forward name = "view" path = "/WorkCalender/ShiftDefinitionView.jsp" />
+ 	</action>	
+
+	<action path = "/frmBaseClndrList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.BaseCalendarListAction"
+ 			name = "BaseCalendarList" scope="request" input = "/BaseCalendarList.jsp">
+ 		<forward name = "success" path = "/WorkCalender/BaseCalendarList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/BaseCalendarList.jsp" />
+ 	</action>
+ 		
+	<action path = "/frmBaseClndrAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.BaseCalendarAddAction"
+ 			name = "BaseCalendarAdd" scope="request" input = "/WorkCalender/BaseCalendarAdd.jsp">
+ 		<forward name = "success" path = "/WorkCalender/BaseCalendarList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/BaseCalendarAdd.jsp" />
+ 	</action>	
+ 	
+	<action path = "/frmBaseClndrEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.BaseCalendarEditAction"
+ 			name = "BaseCalendarEdit" scope="request" input = "/WorkCalender/BaseCalendarEdit.jsp">
+ 		<forward name = "success" path = "/WorkCalender/BaseCalendarList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/BaseCalendarEdit.jsp" />
+ 		<forward name = "view" path = "/WorkCalender/BaseCalendarView.jsp" />
+ 	</action>	
+
+	<action path = "/frmAvlClndrList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.AvailCalendarListAction"
+ 			name = "AvailCalendarList" scope="request" input = "/AvailCalendarList.jsp">
+ 		<forward name = "success" path = "/WorkCalender/AvailCalendarList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/AvailCalendarList.jsp" />
+ 	</action>
+ 		
+	<action path = "/frmAvailClndrAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.AvailCalendarAddAction"
+ 			name = "AvailCalendarAdd" scope="request" input = "/WorkCalender/AvailCalendarAdd.jsp">
+ 		<forward name = "success" path = "/WorkCalender/AvailCalendarList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/AvailCalendarAdd.jsp" />
+ 	</action>	
+ 	
+	<action path = "/frmAvailClndrEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workcalendar.AvailCalendarEditAction"
+ 			name = "AvailCalendarEdit" scope="request" input = "/WorkCalender/AvailCalendarEdit.jsp">
+ 		<forward name = "success" path = "/WorkCalender/AvailCalendarList.jsp" />
+ 		<forward name = "failure" path = "/WorkCalender/AvailCalendarEdit.jsp" />
+ 		<forward name = "view" path = "/WorkCalender/AvailCalendarView.jsp" />
+ 	</action>
+  
+  <!-- ********************* End WorkCalendar ************************ -->
+  
+  <!-- ********************* Start Operation Group ************************ -->
+	<action path = "/frmOprGrpList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.operationgroup.OperationGroupListAction"
+ 			name = "OperationGroupList" scope="request" input = "/OperationGroupList.jsp">
+ 		<forward name = "success" path = "/OperationGroup/OperationGroupList.jsp" />
+ 		<forward name = "failure" path = "/OperationGroup/OperationGroupList.jsp" />
+ 	</action>
+ 		
+	<action path = "/frmOprGrpAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.operationgroup.OperationGroupAddAction"
+ 			name = "OperationGroupAdd" scope="request" input = "/OperationGroup/OperationGroupAdd.jsp">
+ 		<forward name = "success" path = "/OperationGroup/OperationGroupList.jsp" />
+ 		<forward name = "failure" path = "/OperationGroup/OperationGroupAdd.jsp" />
+ 	</action>	
+ 	
+	<action path = "/frmOprGrpEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.operationgroup.OperationGroupEditAction"
+ 			name = "OperationGroupEdit" scope="request" input = "/OperationGroup/OperationGroupEdit.jsp">
+ 		<forward name = "success" path = "/OperationGroup/OperationGroupList.jsp" />
+ 		<forward name = "failure" path = "/OperationGroup/OperationGroupEdit.jsp" />
+ 		<forward name = "view" path = "/OperationGroup/OperationGroupView.jsp" />
+ 	</action>
+  <!-- *********************** End Operation Group ************************ -->
+  
+  <!-- *********************** Start JobMaster ************************ -->
+	<action path = "/frmJobList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.JobMasterListAction"
+ 			name = "JobMasterList" scope="request" input = "/JobMasterList.jsp">
+ 		<forward name = "success" path = "/JobMaster/JobMasterList.jsp" />
+ 		<forward name = "failure" path = "/JobMaster/JobMasterList.jsp" />
+ 	</action>
+
+	<action path = "/frmJobMaster"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.JobMasterAddAction"
+ 			name = "JobMasterAdd" scope="request" input = "/JobMaster/JobMasterAdd.jsp">
+ 		<forward name = "success" path = "/JobMaster/JobMasterList.jsp" />
+ 		<forward name = "failure" path = "/JobMaster/JobMasterAdd.jsp" />
+ 	</action>
+
+	<action path = "/jobMasterEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.JobMasterEditAction"
+ 			name = "JbMasterEdit" scope="request" input = "/JobMaster/JobMasterEdit.jsp">
+ 		<forward name = "success" path = "/JobMaster/JobMasterList.jsp" />
+ 		<forward name = "failure" path = "/JobMaster/JobMasterEdit.jsp" />
+ 		<forward name = "view" path = "/JobMaster/JobMasterView.jsp" />
+ 	</action>
+ 	
+ 	<action path = "/frmNewGeneralNameAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.NewGeneralNameAddAction"
+ 			name = "GeneralNameAdd" scope="request" input = "/JobMaster/NewGeneralName.jsp">
+ 		<forward name = "success" path = "/JobMaster/JobMasterAdd.jsp" />
+ 		<forward name = "failure" path = "/JobMaster/NewGeneralName.jsp" />
+ 	</action>	
+ 	
+  <!-- *********************** End JobMaster ************************ -->
+  
+  <!-- *********************** Start Rework ************************ -->
+	<action path = "/frmReworkList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.rework.ReworkListAction"
+ 			name = "ReworkList" scope="request" input = "/ReworkList.jsp">
+ 		<forward name = "success" path = "/Rework/ReworkList.jsp" />
+ 		<forward name = "failure" path = "/Rework/ReworkList.jsp" />
+ 	</action>
+
+	<action path = "/frmReworkEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.rework.ReworkEditAction"
+ 			name = "ReworkEdit" scope="request" input = "/Rework/ReworkEdit.jsp">
+ 		<forward name = "success" path = "/Rework/ReworkList.jsp" />
+ 		<forward name = "failure" path = "/Rework/ReworkEdit.jsp" />
+ 		<forward name = "view" path = "/Rework/ReworkView.jsp" />
+ 	</action>
+
+	<action path = "/frmCategory"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.rework.ReworkAddAction"
+ 			name = "ReworkAdd" scope="request" input = "/Rework/ReworkAdd.jsp">
+ 		<forward name = "success" path = "/Rework/ReworkList.jsp" />
+ 		<forward name = "failure" path = "/Rework/ReworkAdd.jsp" />
+ 	</action>
+
+  <!-- ************************* End Rework ************************ -->
+
+  <!-- ************************* Start WorkOrder ************************ -->
+	<action path = "/frmWrkOrdList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderListAction"
+ 			name = "WorkOrderList" scope="request" input = "/WorkOrderList.jsp">
+ 		<forward name = "success" path = "/WorkOrder/WorkOrderList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/WorkOrderList.jsp" />
+ 	</action>
+
+	<action path = "/frmWorkOrderAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderAddAction"
+ 			name = "WorkOrderAdd" scope="request" input = "/WorkOrder/WorkOrderAdd.jsp">
+ 		<forward name = "success" path = "/WorkOrder/WorkOrderList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/WorkOrderAdd.jsp" />
+ 	</action>
+ 	
+ 	<action path = "/frmNewGeneralNameAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.jobmaster.NewGeneralNameAddAction"
+ 			name = "GeneralNameAdd" scope="request" input = "/JobMaster/NewGeneralName.jsp">
+ 		<forward name = "success" path = "/WorkOrder/DummyWorkOrderAdd.jsp" />
+ 		<forward name = "failure" path = "/JobMaster/NewGeneralName.jsp" />
+ 	</action>
+
+	<action path = "/frmWorkOrderEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderEditAction"
+ 			name = "WorkOrderEdit" scope="request" input = "/WorkOrder/WorkOrderEdit.jsp">
+ 		<forward name = "success" path = "/WorkOrder/WorkOrderList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/WorkOrderEdit.jsp" />
+ 		<forward name = "view" path = "/WorkOrder/WorkOrderView.jsp" />
+ 	</action>
+
+	<action path = "/frmDumWrkOrdList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.DummyWorkOrderListAction"
+ 			name = "DummyWorkOrderList" scope="request" input = "/DummyWorkOrderList.jsp">
+ 		<forward name = "success" path = "/WorkOrder/DummyWorkOrderList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/DummyWorkOrderList.jsp" />
+ 	</action>
+ 	
+	<action path = "/frmDumWrkOrdAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.DummyWorkOrderAddAction"
+ 			name = "DummyWorkOrderAdd" scope="request" input = "/WorkOrder/DummyWorkOrderAdd.jsp">
+ 		<forward name = "success" path = "/WorkOrder/DummyWorkOrderList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/DummyWorkOrderAdd.jsp" />
+ 	</action>
+ 	
+	<action path = "/frmDumWrkOrdEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.DummyWorkOrderEditAction"
+ 			name = "DummyWorkOrderEdit" scope="request" input = "/WorkOrder/DummyWorkOrderEdit.jsp">
+ 		<forward name = "success" path = "/WorkOrder/DummyWorkOrderList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/DummyWorkOrderEdit.jsp" />
+ 		<forward name = "view" path = "/WorkOrder/DummyWorkOrderView.jsp" />
+ 	</action>
+
+	<action path = "/frmWrkOrdJobClose"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.WorkOrderJobCloseAction"
+ 			name = "WorkOrderJobClose" scope="request" input = "/WorkOrderJobClose.jsp">
+ 		<forward name = "success" path = "/WorkOrder/WorkOrderJobClose.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/WorkOrderJobClose.jsp" />
+ 	</action>
+
+	<action path = "/frmPreClsList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.PreCloseLogListAction"
+ 			name = "PreCloseLogList" scope="request" input = "/PreCloseLogList.jsp">
+ 		<forward name = "success" path = "/WorkOrder/PreCloseLogList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/PreCloseLogList.jsp" />
+ 	</action>
+
+	<action path = "/frmPreClsLogAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.PreCloseLogAddAction"
+ 			name = "PreCloseLogAdd" scope="request" input = "/PreCloseLogAdd.jsp">
+ 		<forward name = "success" path = "/WorkOrder/PreCloseLogList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/PreCloseLogAdd.jsp" />
+ 	</action>
+	
+	<action path = "/frmPreClsLogEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.workorder.PreCloseLogEditAction"
+ 			name = "PreCloseLogEdit" scope="request" input = "/PreCloseLogEdit.jsp">
+ 		<forward name = "success" path = "/WorkOrder/PreCloseLogList.jsp" />
+ 		<forward name = "failure" path = "/WorkOrder/PreCloseLogEdit.jsp" />
+ 		<forward name = "view" path = "/WorkOrder/PreCloseLogView.jsp" />
+ 	</action>
+ 	
+  <!-- *************************** End WorkOrder ************************ -->
+  
+  <!-- ************************** Start Production ************************* -->
+	<action path = "/frmProdList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionListAction"
+ 			name = "ProductionList" scope="request" input = "/ProductionList.jsp">
+ 		<forward name = "success" path = "/Production/ProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/ProductionList.jsp" />
+ 	</action>
+
+	<action path = "/frmProdAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionAddAction"
+ 			name = "ProductionAdd" scope="request" input = "/Production/ProductionAdd.jsp">
+ 		<forward name = "success" path = "/Production/ProductionList.jsp" />
+  		<forward name = "failure" path = "/Production/ProductionAdd.jsp" />
+  		<forward name = "viewAccountings" path = "/Production/ProductionAcctngDetails.jsp" />
+ 	</action>
+
+	<action path = "/frmProdEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionEditAction"
+ 			name = "ProductionEdit" scope="request" input = "/Production/ProductionEdit.jsp">
+ 		<forward name = "success" path = "/Production/ProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/ProductionEdit.jsp" />
+ 		<forward name = "view" path = "/Production/ProductionView.jsp" />
+		<forward name = "prodnview" path = "/Production/ProductionView.jsp"/> 		
+		<forward name = "searchProd" path = "/Production/PostProduction.jsp"/>
+ 	</action>
+
+	<action path = "/frmNonProdList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.NonProductionListAction"
+ 			name = "NonProductionList" scope="request" input = "/NonProductionList.jsp">
+ 		<forward name = "success" path = "/Production/NonProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/NonProductionList.jsp" />
+ 	</action>
+
+	<action path = "/frmNonProdAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.NonProductionAddAction"
+ 			name = "NonProductionAdd" scope="request" input = "/Production/NonProductionAdd.jsp">
+ 		<forward name = "success" path = "/Production/NonProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/NonProductionAdd.jsp" />
+ 		<forward name = "nProdAccountings" path = "/Production/ProductionAcctngDetails.jsp" />
+ 	</action>
+
+	<action path = "/frmNonProdEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.NonProductionEditAction"
+ 			name = "NonProductionEdit" scope="request" input = "/Production/NonProductionEdit.jsp">
+ 		<forward name = "success" path = "/Production/NonProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/NonProductionEdit.jsp" />
+ 		<forward name = "view" path = "/Production/NonProductionView.jsp" />
+		<forward name = "nonprodnview" path = "/Production/NonProductionView.jsp"/>
+		<forward name = "searchNonProd" path = "/Production/PostProduction.jsp"/>
+ 	</action>
+
+	<action path = "/frmPostProd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.PostProductionAction"
+ 			name = "PostProduction" scope="request" input = "/PostProduction.jsp">
+ 		<forward name = "success" path = "/Production/PostProduction.jsp" />
+ 		<forward name = "failure" path = "/Production/PostProduction.jsp" />
+ 	</action>
+
+	<action path = "/frmPostProdQC"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.PostProductionAction"
+ 			name = "QCPostProduction" scope="request" input = "/QCPostProduction.jsp">
+ 		<forward name = "success" path = "/Production/QCPostProduction.jsp" />
+ 		<forward name = "failure" path = "/Production/QCPostProduction.jsp" />
+ 	</action>
+
+	<action path = "/frmShipPost"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.PostProductionAction"
+ 			name = "ShipmentPostProduction" scope="request" input = "/ShipmentPosting.jsp">
+ 		<forward name = "success" path = "/Production/ShipmentPosting.jsp" />
+ 		<forward name = "failure" path = "/Production/ShipmentPosting.jsp" />
+ 	</action>
+
+	<action path = "/frmPostingRule"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.PostingRuleAction"
+ 			name = "PostingRule" scope="request" input = "/PostingRule.jsp">
+ 		<forward name = "success" path = "/Production/PostingRule.jsp" />
+ 		<forward name = "failure" path = "/Production/PostingRule.jsp" />
+ 	</action>
+
+	<action path = "/frmProdAcc"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionAcctngDetailsAction"
+ 			name = "PostAccountings" scope="request" input = "/ProductionAcctngDetails.jsp">
+ 		<forward name = "prodAdd" path = "/Production/ProductionAdd.jsp" />
+ 		<forward name = "rdlProdAdd" path = "/Production/RadialProductionAdd.jsp" />
+ 		<forward name = "nonProdAdd" path = "/Production/NonProductionAdd.jsp" />
+ 		<forward name = "popAdd" path = "/Production/PayOutProductionAdd.jsp" />
+ 	</action>
+
+	<action path = "/frmProdFinalList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionFinalAction"
+ 			name = "ProductionFinalList" scope="request" input = "/ProductionFinal.jsp">
+ 		<forward name = "success" path = "/Production/ProductionFinal.jsp" />
+ 		<forward name = "failure" path = "/Production/ProductionFinal.jsp" />
+ 	</action>
+
+	<action path = "/frmProdFinalAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionFinalAddAction"
+ 			name = "ProductionFinalAdd" scope="request" input = "/Production/ProductionFinalAdd.jsp">
+ 		<forward name = "success" path = "/Production/ProductionFinal.jsp" />
+  		<forward name = "failure" path = "/Production/ProductionFinalAdd.jsp" />
+ 	</action>
+
+	<action path = "/frmProdFinalEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ProductionFinalEditAction"
+ 			name = "ProductionFinalEdit" scope="request" input = "/Production/ProductionFinalEdit.jsp">
+ 		<forward name = "success" path = "/Production/ProductionFinal.jsp" />
+  		<forward name = "failure" path = "/Production/ProductionFinalEdit.jsp" />
+ 		<forward name = "view" path = "/Production/ProductionFinalView.jsp" />
+		<forward name = "fprodnview" path = "/Production/ProductionFinalView.jsp"/> 		
+		<forward name = "searchFinal" path = "/Production/QCPostProduction.jsp"/>
+ 	</action>
+
+	<action path = "/frmCheckMachAccntng"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.CheckMachineAccntngAction"
+ 			name = "ProductionAccntng" scope="request" input = "/Production/CheckMachineAccntng.jsp">
+ 		<forward name = "success" path = "/Production/CheckMachineAccntng.jsp" />
+  		<forward name = "failure" path = "/Production/CheckMachineAccntng.jsp" />
+ 	</action>
+
+  <!-- *************************** End Production ************************** -->
+  
+  <!-- ************************** Start PayOut Production ************************* -->
+	<action path = "/frmPayOutProdList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.PayOutProductionListAction"
+ 			name = "PayOutProductionList" scope="request" input = "/PayOutProductionList.jsp">
+ 		<forward name = "success" path = "/Production/PayOutProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/PayOutProductionList.jsp" />
+ 	</action>
+
+	<action path = "/frmPayOutProdAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.PayOutProductionAddAction"
+ 			name = "PayOutProductionAdd" scope="request" input = "/Production/PayOutProductionAdd.jsp">
+ 		<forward name = "success" path = "/Production/PayOutProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/PayOutProductionAdd.jsp" />
+ 		<forward name = "popAccountings" path = "/Production/ProductionAcctngDetails.jsp" />
+ 	</action>
+ 	
+ 	<action path = "/frmPayOutProdEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.PayOutProductionEditAction"
+ 			name = "PayOutProductionEdit" scope="request" input = "/Production/PayOutProductionEdit.jsp">
+ 		<forward name = "success" path = "/Production/PayOutProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/PayOutProductionEdit.jsp" />
+ 		<forward name = "view" path = "/Production/PayOutProductionView.jsp" />
+		<forward name = "popview" path = "/Production/PayOutProductionView.jsp"/>
+		<forward name = "searchPop" path = "/Production/PostProduction.jsp"/>
+ 	</action>
+
+  <!-- *************************** End PayOut Production ************************** -->
+	
+	  <!-- ************************** Start Radial Production ************************* -->
+
+	 <action path = "/frmRdlProdList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.RadialProductionListAction"
+ 			name = "RadialProductionList" scope="request" input = "/RadialProductionList.jsp">
+ 		<forward name = "success" path = "/Production/RadialProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/ProductionAdd.jsp" />
+  	 </action>
+
+	 <action path = "/frmRdlProdAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.RadialProductionAddAction"
+ 			name = "RadialProductionAdd" scope="request" input = "/Production/RadialProductionAdd.jsp">
+ 		<forward name = "success" path = "/Production/RadialProductionList.jsp" />
+		<forward name = "posting" path = "/Production/RadialProductionAdd.jsp" />
+ 		<forward name = "failure" path = "/Production/RadialProductionAdd.jsp" />
+  		<forward name = "rdlAccountings" path = "/Production/ProductionAcctngDetails.jsp" />
+ 	 </action>
+ 	 
+ 	 <action path = "/frmRdlProdEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.RadialProductionEditAction"
+ 			name = "RadialProductionEdit" scope="request" input = "/Production/RadialProductionEdit.jsp">
+ 		<forward name = "success" path = "/Production/RadialProductionList.jsp" />
+ 		<forward name = "failure" path = "/Production/RadialProductionEdit.jsp" />
+ 		<forward name = "view" path = "/Production/RadialProductionView.jsp" />
+		<forward name = "radlview" path = "/Production/RadialProductionView.jsp"/>
+		<forward name = "searching" path = "/Production/PostProduction.jsp"/>		
+ 	 </action>
+ 	 
+	  <!-- *************************** End Radial Production ************************** -->
+	  
+	  <!-- *************************** Despatch Clearance ************************** -->
+ 	 <action path = "/frmdespatchClearanceList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.DespatchClearanceListAction"
+ 			name = "DespatchClearanceList" scope="request" input = "/Production/DespatchClearanceList.jsp">
+ 		<forward name = "success" path = "/Production/DespatchClearanceList.jsp" />
+ 		<forward name = "failure" path = "/Production/DespatchClearanceList.jsp" />
+ 	 </action>
+
+ 	 <action path = "/frmDespatchClearanceAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.DespatchClearanceAddAction"
+ 			name = "DespatchClearanceAdd" scope="request" input = "/Production/DespatchClearanceAdd.jsp">
+ 		<forward name = "success" path = "/Production/DespatchClearanceList.jsp" />
+ 		<forward name = "failure" path = "/Production/DespatchClearanceAdd.jsp" />
+ 	</action>
+
+ 	 <action path = "/frmdespatchClearanceEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.DespatchClearanceEditAction"
+ 			name = "DespatchClearanceEdit" scope="request" input = "/Production/DespatchClearanceEdit.jsp">
+ 		<forward name = "success" path = "/Production/DespatchClearanceList.jsp" />
+ 		<forward name = "failure" path = "/Production/DespatchClearanceEdit.jsp" />
+ 		<forward name = "view" path = "/Production/DespatchClearanceView.jsp" />
+ 		<forward name = "despatchView" path = "/Production/DespatchClearanceView.jsp" />
+ 		<forward name = "searchDespatch" path = "/Production/QCPostProduction.jsp" />
+ 	 </action>
+	  
+	  <!-- *************************** End Despatch Clearance ************************** -->
+  
+	  <!-- *************************** Start Shipment Reference ************************** -->
+ 	 <action path = "/frmShipmentList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ShipmentReferenceListAction"
+ 			name = "ShipmentReferenceList" scope="request" input = "/Production/ShipmentReferenceList.jsp">
+ 		<forward name = "success" path = "/Production/ShipmentReferenceList.jsp" />
+ 		<forward name = "failure" path = "/Production/ShipmentReferenceList.jsp" />
+ 	 </action>
+	  
+ 	 <action path = "/frmShipmentAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ShipmentReferenceAddAction"
+ 			name = "ShipmentReferenceAdd" scope="request" input = "/Production/ShipmentReferenceAdd.jsp">
+ 		<forward name = "success" path = "/Production/ShipmentReferenceList.jsp" />
+ 		<forward name = "failure" path = "/Production/ShipmentReferenceAdd.jsp" />
+ 	 </action>
+	  
+ 	 <action path = "/frmShipmentEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.ShipmentReferenceEditAction"
+ 			name = "ShipmentReferenceEdit" scope="request" input = "/Production/ShipmentReferenceEdit.jsp">
+ 		<forward name = "success" path = "/Production/ShipmentReferenceList.jsp" />
+ 		<forward name = "failure" path = "/Production/ShipmentReferenceEdit.jsp" />
+ 		<forward name = "view" path = "/Production/ShipmentReferenceView.jsp" />
+ 		<forward name = "shipmentView" path = "/Production/ShipmentReferenceView.jsp" />
+ 		<forward name = "searchShipment" path = "/Production/ShipmentPosting.jsp" />
+ 	 </action>
+	  
+	  <!-- *************************** End Shipment Reference ************************** -->
+  
+	  <!-- ************************** Start Payroll Administration ************************* -->  
+ 	 <action path = "/frmPayrollId"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollIdAction"
+ 			name = "PayrollId" scope="request" input = "/PayrollAdministration/PayrollId.jsp">
+ 		<forward name = "success" path = "/PayrollAdministration/PayrollId.jsp" />
+ 		<forward name = "failure" path = "/PayrollAdministration/PayrollId.jsp" />
+ 	 </action>  
+ 	 
+ 	 <action path = "/frmPayrollIdAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollIdAddAction"
+ 			name = "PayrollIdAdd" scope="request" input = "/PayrollAdministration/PayrollIdAdd.jsp">
+ 		<forward name = "success" path = "/PayrollAdministration/PayrollId.jsp" />
+ 		<forward name = "failure" path = "/PayrollAdministration/PayrollIdAdd.jsp" />
+ 	 </action>  
+ 	 
+ 	 <action path = "/frmPayRollCycle"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollCycleAction"
+ 			name = "PayrollCycle" scope="request" input = "/PayrollAdministration/PayrollCycle.jsp">
+ 		<forward name = "success" path = "/PayrollAdministration/PayrollCycle.jsp" />
+ 		<forward name = "failure" path = "/PayrollAdministration/PayrollCycle.jsp" />
+ 	 </action>  
+ 	 
+	<action path = "/frmPayrollInterfaceList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollInterfaceAction"
+ 			name = "PayrollInterface" scope="request" input = "/PayrollAdministration/PayrollInterface.jsp">
+ 		<forward name = "success" path = "/PayrollAdministration/PayrollInterface.jsp" />
+ 		<forward name = "failure" path = "/PayrollAdministration/PayrollInterface.jsp" />
+ 	 </action>   	 
+ 	 
+	<action path = "/frmPayroll"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.payroll.CreatePayrollAction"
+ 			name = "CreatePayroll" scope="request" input = "/PayrollAdministration/CreatePayroll.jsp">
+ 		<forward name = "success" path = "/PayrollAdministration/CreatePayroll.jsp" />
+ 		<forward name = "failure" path = "/PayrollAdministration/CreatePayroll.jsp" />
+ 	 </action>   	 
+ 	 
+ 	 <action path = "/frmPayrollAdjustment"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollAdjustmentAction"
+ 			name = "PayrollAdjustment" scope="request" input = "/PayrollAdministration/PayrollAdjustment.jsp">
+ 		<forward name = "success" path = "/PayrollAdministration/PayrollAdjustment.jsp" />
+ 		<forward name = "failure" path = "/PayrollAdministration/PayrollAdjustment.jsp" />
+ 	 </action>   	 
+ 	 
+ 	 	 <action path = "/frmClosePayrollList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.payroll.PayrollCloseListAction"
+ 			name = "PayrollCloseList" scope="request" input = "/PayrollAdministration/PayrollCloseList.jsp">
+ 		<forward name = "success" path = "/PayrollAdministration/PayrollCloseList.jsp" />
+ 		<forward name = "failure" path = "/PayrollAdministration/PayrollCloseList.jsp" />
+ 	 </action>
+ 	 
+ 	  <!-- *************************** End Payroll Administration ************************** -->  
+ 	  
+   	  <!-- *************************** Start ReworkLog ************************** -->  
+
+		<action path = "/frmRewrkLogList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.reworklog.ReworkLogListAction"
+ 			name = "ReworkLogList" scope="request" input = "/ReworkLogList.jsp">
+	 		<forward name = "success" path = "/ReworkLog/ReworkLogList.jsp" />
+		</action>   	 
+
+		<action path = "/frmRewrkLogAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.reworklog.ReworkLogAddAction"
+ 			name = "ReworkLogAdd" scope="request" input = "/ReworkLog/ReworkLogList.jsp">
+	 		<forward name = "success" path = "/ReworkLog/ReworkLogList.jsp" />
+	 		<forward name = "failure" path = "/ReworkLog/ReworkLogAdd.jsp" />
+		</action>   
+
+		<action path = "/frmRewrkLogEdit"
+	 			type = "com.savantit.prodacs.presentation.tableadmin.reworklog.ReworkLogEditAction"
+	 			name = "ReworkLogEdit" scope="request" input = "/ReworkLog/ReworkLogView.jsp">
+	 		<forward name = "success" path = "/ReworkLog/ReworkLogList.jsp" />
+	 		<forward name = "view" path = "/ReworkLog/ReworkLogView.jsp" />
+	 	</action>
+
+   	  <!-- *************************** End ReworkLog ************************** -->   	  
+ 	  
+   	  <!-- *************************** Start Security Administration ************************** -->  
+
+		<action path = "/frmGroupInfoList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.GroupListAction"
+ 			name = "GroupList" scope="request" input = "/SecurityAdministration/GroupList.jsp">
+	 		<forward name = "success" path = "/SecurityAdministration/GroupList.jsp" />
+	 		<forward name = "failure" path = "/SecurityAdministration/GroupList.jsp" />
+		</action>   	 
+		
+		<action path = "/frmGroupAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.GroupAddAction"
+ 			name = "GroupAdd" scope="request" input = "/SecurityAdministration/GroupAdd.jsp">
+	 		<forward name = "success" path = "/SecurityAdministration/GroupList.jsp" />
+	 		<forward name = "failure" path = "/SecurityAdministration/GroupAdd.jsp" />	 		
+		</action>   	 
+		
+		<action path = "/frmGroupEdit"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.GroupEditAction"
+ 			name = "GroupEdit" scope="request" input = "/SecurityAdministration/GroupEdit.jsp">
+	 		<forward name = "success" path = "/SecurityAdministration/GroupList.jsp" />
+	 		<forward name = "failure" path = "/SecurityAdministration/GroupEdit.jsp" />	 		
+	 		<forward name = "view" path = "/SecurityAdministration/GroupView.jsp" />	 		
+		</action>   	 
+		
+		<action path = "/frmUserInfoList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserListAction"
+ 			name = "UserList" scope="request" input = "/SecurityAdministration/UserList.jsp">
+	 		<forward name = "success" path = "/SecurityAdministration/UserList.jsp" />
+		</action>   	 
+
+		<action path = "/frmUserAdd"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserAddAction"
+ 			name = "UserAdd" scope="request" input = "/SecurityAdministration/UserAdd.jsp">
+	 		<forward name = "success" path = "/SecurityAdministration/UserList.jsp" />
+	 		<forward name = "failure" path = "/SecurityAdministration/UserAdd.jsp" />
+		</action>   
+
+		<action path = "/frmUserEdit"
+	 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserEditAction"
+	 			name = "UserEdit" scope="request" input = "/SecurityAdministration/UserEdit.jsp">
+	 		<forward name = "success" path = "/SecurityAdministration/UserList.jsp" />
+	 		<forward name = "failure" path = "/SecurityAdministration/UserEdit.jsp" />
+	 		<forward name = "view" path = "/SecurityAdministration/UserView.jsp" />
+	 	</action>
+
+		<action path = "/frmLogin"
+	 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.LoginAction"
+	 			name = "Login" scope="request" input = "/login.jsp">
+	 		<forward name = "success" path = "/IndexPages/index.jsp" />
+	 		<forward name = "failure" path = "/login.jsp" />
+	 		<forward name = "masterRedirector" path = "/MasterUser.jsp" />
+	 	</action>
+
+		<action path = "/frmMasterLogin"
+	 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.MasterLoginAction"
+	 			name = "MasterLogin" scope="request" input = "/MasterUser.jsp">
+	 		<forward name = "success" path = "/SystemInfo.jsp" />
+	 		<forward name = "failure" path = "/MasterUser.jsp" />
+	 	</action>
+
+		<action path = "/frmSysInfo"
+	 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.SystemInfoAction"
+	 			name = "SystemInfo" scope="request" input = "/MasterUser.jsp">
+	 		<forward name = "success" path = "/login.jsp" />
+	 		<forward name = "failure" path = "/login.jsp" />
+	 	</action>
+
+		<action path = "/frmUserPrefsEdit"
+	 			type = "com.savantit.prodacs.presentation.tableadmin.securityadministration.UserPreferencesAction"
+	 			name = "UserPreferences" scope="request" input = "/UserPreferencesEdit.jsp">
+	 		<forward name = "success" path = "/SecurityAdministration/UserPreferences.jsp" />
+	 		<forward name = "failure" path = "/SecurityAdministration/UserPreferencesEdit.jsp" />
+	 	</action>
+
+   	  <!-- *************************** End Security Administration ************************** -->   	  
+ 	  
+   	  <!-- *************************** Start WorkOrder Job Status ************************** -->   	  
+ 	  
+ 	  <action path = "/frmWorkOrderJobStatusList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.WorkOrderJobStatusListAction"
+ 			name = "WorkOrderJobStatusList" scope="request" input = "/JobStatus.jsp">
+ 		<forward name = "success" path = "/Production/JobStatus.jsp" />
+ 		<forward name = "failure" path = "/Production/JobStatus.jsp" />
+ 	</action>
+ 	  
+ 	  <action path = "/frmWOJobStatusList"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.production.WOJobStatusListAction"
+ 			name = "WOJobStatusList" scope="request" input = "/WoJobStatus.jsp">
+ 		<forward name = "success" path = "/Production/WoJobStatus.jsp" />
+ 		<forward name = "failure" path = "/Production/WoJobStatus.jsp" />
+ 	</action>
+   	  <!-- *************************** End WorkOrder Job Status ************************** -->   	  
+ 	  
+   	  <!-- *************************** Start Production Planning ************************** -->   	  
+ 	  
+ 	  <action path = "/frmProdPlan"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.productionplanning.GroupwiseHoursAction"
+ 			name = "GroupwiseHours" scope="request" input = "/GroupwiseHours.jsp">
+ 		<forward name = "success" path = "/ProductionPlanning/GroupwiseHours.jsp" />
+ 		<forward name = "failure" path = "/ProductionPlanning/GroupwiseHours.jsp" />
+ 	</action>
+   	  <!-- *************************** End Production Planning ************************** -->   	  
+ 	  
+   	  <!-- *************************** Start Graphs ************************** -->   	  
+ 	  
+ 	  <action path = "/frmIdleBreakDownGraph"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.reports.IdleBreakDownAction"
+ 			name = "IdleBreakDownGraph" scope="request" input = "/IdleBreakDownChart.jsp">
+ 		<forward name = "success" path = "/Reports/IdleBreakDown/IdleBreakDownChart.jsp" />
+ 		<forward name = "failure" path = "/Reports/IdleBreakDown/IdleBreakDownChart.jsp" />
+ 	</action>
+ 	  
+ 	  <action path = "/frmEmpPerformanceChart"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.reports.EmployeePerformanceAction"
+ 			name = "EmployeePerformanceGraph" scope="request" input = "/EmployeePerformanceChart.jsp">
+ 		<forward name = "success" path = "/Reports/EmployeePerformance/EmployeePerformanceChart.jsp" />
+ 		<forward name = "failure" path = "/Reports/EmployeePerformance/EmployeePerformanceChart.jsp" />
+ 	</action>
+ 	
+ 	  <action path = "/frmMachineUtil"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.reports.MachineUtilAction"
+ 			name = "MachineUtilGraph" scope="request" input = "/MachineUtilChart.jsp">
+ 		<forward name = "success" path = "/Reports/MachineUtilization/MachineUtilChart.jsp" />
+ 		<forward name = "failure" path = "/Reports/MachineUtilization/MachineUtilChart.jsp" />
+ 	</action>
+ 	
+   	  <!-- *************************** End Graphs ************************** -->   	  
+ 	  
+   	  <!-- *************************** Start Mail Scheduler ************************** -->   	  
+ 	  
+ 	  <action path = "/frmMailScheduler"
+ 			type = "com.savantit.prodacs.presentation.tableadmin.Scheduler.MailSchedulerAction"
+ 			name = "MailScheduler" scope="request" input = "/MailScheduler.jsp">
+ 		<forward name = "success" path = "/MailScheduler.jsp" />
+ 		<forward name = "failure" path = "/MailScheduler.jsp" />
+ 	</action>
+ 	
+   	  <!-- *************************** End Mail Scheduler ************************** -->   	  
+ 	  
+  </action-mappings>
+
+</struts-config>
